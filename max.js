@@ -12,11 +12,11 @@ function max(numArray){
                 vMax = numArray[i];
             }
         }
-    }else{
-        vMax = undefined;
-    }
 
-    return vMax;
+        return vMax;
+    }else{
+        return undefined;
+    }    
 }
 
 console.log(max([1, 3, 2])) // 3
