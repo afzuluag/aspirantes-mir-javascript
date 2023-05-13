@@ -8,8 +8,8 @@ function max(numArray){
 
         for(let i=0;i < numArray.length ; i++){
             
-            if(numArray[i]>numArray[i+1] && vMax < numArray[i]){
-                vMax = numArray[i];
+            if(numArray[i]>vMax){
+                vMax = numArray[i];                
             }
         }
 
@@ -20,6 +20,6 @@ function max(numArray){
 }
 
 console.log(max([1, 3, 2])) // 3
-console.log(max([10, 9, 8, 7, 6, 5, 4])) // 10
+console.log(max([10, 9, 8, 7, 6, 5, 6])) // 10
 console.log(max([])) // undefined
 
