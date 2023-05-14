@@ -10,6 +10,6 @@ function join(arreglo){
     return cadena;
 }
 
-console.log(join([1, 3, 2])) // 1 3 2
-console.log(join(["Camilo", "Sebastian", "Natalia", "Pedro"])) // Camilo Sebastian Natalia Pedro
+console.log(join([1, 3, "-"])) // 1 3 2
+console.log(join(["Andres", "Zuluaga",""])) // Andres Zuluaga
 console.log(join([])) // []

@@ -1,24 +1,22 @@
 function maxIndex(numArray){
-    let vMax;
-    let iMax;
-    
+             
     if (numArray.length>0){            
         
-        vMax=0;
+        let vMax=0;
+        let iMax;
 
         for(let i=0;i < numArray.length ; i++){
             
-            if(numArray[i]>numArray[i+1] && vMax < numArray[i]){
+            if(numArray[i]>vMax){
                 vMax = numArray[i];
                 iMax = i;
             }
         }
+
+        return iMax;
     }else{
-        iMax = -1;
-    }
-
-    return iMax;
-
+        return -1;
+    }    
 }
 
 console.log(maxIndex([1, 3, 2])) // 1
