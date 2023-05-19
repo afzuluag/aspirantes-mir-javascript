@@ -9,10 +9,10 @@ console.log(pedro.edad);
 pedro.estatura=1.8;
 delete pedro.activo;
 
-let llaves = Object.keys(pedro);
+for (const property in pedro) {
+    console.log(`${property}: ${pedro[property]}`);
+  }
 
-for (let i=0; i < llaves.length; i++) {  
-    let llave = llaves [i];
-    console.log(pedro.propertyName +":"+  pedro[llave]);
-}
+pedro.saluda = function(){console.log("Hola, me llamo " + this.nombre)};
 
+pedro.saluda();
